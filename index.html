@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+
+<link rel="stylesheet" type="text/css" href="css/tttv1.css">
+
+<script src="js/tttv1.js"></script>
+
+</head>
+<body onload="startGame();">
+	<div id="maincontainer">
+		<h1 id="title"><img src="ironmantitle.png"/></h1>
+		<div id="message">Messages will go here</div>
+			<table id="board">
+				<tr class="row">
+					<td id="s1" class="Square" onclick="nextMove(this);"></td>
+					<td id="s2" class="Square" onclick="nextMove(this);"></td>
+					<td id="s3" class="Square" onclick="nextMove(this);"></td>
+				</tr>	
+				<tr class="row">
+					<td id="s4" class="Square" onclick="nextMove(this);"></td>
+					<td id="s5" class="Square" onclick="nextMove(this);"></td>
+					<td id="s6" class="Square" onclick="nextMove(this);"></td>
+				</tr>
+				<tr class="row">
+					<td id="s7" class="Square" onclick="nextMove(this);"></td>
+					<td id="s8" class="Square" onclick="nextMove(this);"></td>
+					<td id="s9" class="Square" onclick="nextMove(this);"></td>
+				</tr>
+			</table>
+			<a id="startover" href="javascript:startGame();">Start Over</a>
+	</div>
+</body>
+</html>
