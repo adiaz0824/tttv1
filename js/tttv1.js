@@ -50,6 +50,7 @@
 	
 	}
 // ============================================================
+// Win logic for checking the gameboard to see if someone has won
 	function checkForWinner(move) {
 		var result = false;
 		if (checkRow(1,2,3, move) || 
@@ -66,7 +67,7 @@
 		return result;
 	}
 // ============================================================	
-
+// References checkRow function above to see if any of the conditions above have been met
 	function checkRow(a,b,c, move) {
 		var result = false;
 		if (getBox(a) ==move && getBox(b) ==move && getBox(c) == move){
@@ -75,11 +76,12 @@
 		return result;
 	}
 // ============================================================
-
+// Switches from X to O 
 	function getBox(number) {
 		return document.getElementById("s" + number).innerText;
 	}
 // ============================================================
+// Allows X or O to be issued to that box
 	function clearBox(number) {
 		document.getElementById("s" + number).innerText = "";
 }

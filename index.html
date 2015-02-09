@@ -4,18 +4,21 @@
 	<title></title>
 
 
-
+<!-- Reference the css style sheet -->
 <link rel="stylesheet" type="text/css" href="css/tttv1.css">
-
+<!-- References the js sheet being called on -->
 <script src="js/tttv1.js"></script>
 
 </head>
+<!-- When the page loads run the startGame function which clears the game board and generates a random player to start -->
 <body onload="startGame();">
 	<div id="maincontainer">
 		<h1 id="title"><img src="ironmantitle.png"/></h1>
 		<div id="message">Messages will go here</div>
 			<table id="board">
 				<tr class="row">
+				<!-- We use the id to describe the specific square, give it a class of square for styling, nextMove this refers
+				to each square being clicked and the function nextMove -->
 					<td id="s1" class="Square" onclick="nextMove(this);"></td>
 					<td id="s2" class="Square" onclick="nextMove(this);"></td>
 					<td id="s3" class="Square" onclick="nextMove(this);"></td>
